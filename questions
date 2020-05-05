@@ -1,0 +1,40 @@
+1)	Explain REST and RESTful
+
+Rest (Representational State Transfer) is an architect that uses the HTTP protocol to present and manipulate resources, this architecture allows us to create distributed applications (web, web service, etc.) interoperable, it is based on a number of constraints that can be defined as a set of conventions and good practices, which are:
+
+1.	Client-server, the server communicates with a client that handles the user interactions. Also, there is a clear separation of concerns divides the two components, so we can improve them independently
+2.	Stateless, server don’t maintain any state of client, which means the requests of the clients to the servers contain all the information required to process them
+3.	Cacheable, the servers mark their responses as cacheable or not, so the clients can cache the data when possible in order to improve the performance.
+4.	Unique interface, REST services provide data as resources with a unique identifier
+5.	Multi-layer system, each component in the system is independent, so we can add load-balancers and proxies to improve security or performance.
+
+A RESTful service is more than a web server that exchanges JSON, or any other, documents. These constraints work together to create a very specific type of application.
+
+2)	Explain the architectural style for the creation of a web API (client server communication, formatting language, etc.)
+
+1.	The REST architecture that relies on the HTTP protocol for the exchange of information with the JSON or XML format, the resources are identified by URIs.
+2.	SOAP (Simple Object Access Protocol) relies heavily on XML, with the XML structure of the request and response for that operation.
+
+3) Explain HTTP requests types when used with RESTful web (GET, PUT, POST, etc.)
+	GET: read and get information
+	PUT: update information
+	POST: create new information
+	DELETE: delete a certain piece of information
+	PATCH: update information
+
+3)	Explain the difference between stateless and stateful protocol. Which type of protocol is HTTP?
+A stateless protocol is a communications protocol in which no session information is retained by the server
+A Stateful protocol demand the server to maintain user’s state information in the form of sessions.
+So, HTTP is a stateless protocol.
+
+5) Explain the difference between a GET and a POST (like how are sent the parameters)
+	GET carries request parameter appended in URL string
+		e.g. url/user?name=wang&password=123
+	POST carries request parameter in message body which makes it more secure way of transferring data from client to server in http protocol.
+
+6) You can’t work out how to solve a coding problem. What do you do to find the answer?
+	First, I will try to diagnose the problem to figure out where the problem lays.
+If l can understand the problem, I will try my best to solve it by searching online and refer to the API document.
+Otherwise, I will ask my teammates for help if I am in a team work project or I will consult to the technical leader in this area.
+No matter which way I choose, I will always note down the problem in order to prevent it in the future.
+	
